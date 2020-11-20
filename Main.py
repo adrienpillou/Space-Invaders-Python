@@ -92,6 +92,9 @@ def update_aliens():
             move_aliens()
         else:
             move_aliens_down()
+    
+    if check_aliens_collision():
+        game_over()
 
     # Shooting mechanics
     if(alien_shoot_alarm.is_ended()):
@@ -137,6 +140,15 @@ def check_aliens_can_move():
         if not next_position in x_positions:
                 return False
     return True
+
+def check_aliens_collision():
+    for alien in aliens:
+        for shelter in shelters:
+            if check_collision(alien.get_rect(), shelter.get_rect()):
+                return True
+            elif check_collision(alien.get_rect(), player.get_rect()):
+                return True
+    return False
        
 def draw_aliens():
     for alien in aliens:
@@ -218,17 +230,7 @@ def update_projectiles():
             bullets.remove(bullet)
             global lives
             if(lives>0):
-                lives-=1
-                play_sound_effect("PLAYER KILLED", .1)
-                '''player.can_move = False
-                frametime = .2
-                player.set_image(sheet.get_sprite('PLAYER-EXPLOSION-0'))
-                player.set_image(sheet.get_sprite('PLAYER-EXPLOSION-1'))
-                player.set_image(sheet.get_sprite('PLAYER-EXPLOSION-0'))
-                player.set_image(sheet.get_sprite('PLAYER-EXPLOSION-1'))
-                player.can_move = True
-                player.set_image(sheet.get_sprite('PLAYER'))'''
-                player.set_position((WIDTH/2-player.width/2, player.get_y()))
+                destroy_player()
             else:
                 game_over()
 
@@ -280,6 +282,20 @@ def update_player():
             instance = shoot((player.get_x() + player.width/2, player.get_y()-2), (0, -256))
             instance.add_image(sheet.get_sprite('PLAYER-PROJECTILE'))
             instance.set_tag("PLAYER")
+
+def destroy_player():
+    global lives
+    lives-=1
+    play_sound_effect("PLAYER KILLED", .1)
+    '''player.can_move = False
+    frametime = .2
+    player.set_image(sheet.get_sprite('PLAYER-EXPLOSION-0'))
+    player.set_image(sheet.get_sprite('PLAYER-EXPLOSION-1'))
+    player.set_image(sheet.get_sprite('PLAYER-EXPLOSION-0'))
+    player.set_image(sheet.get_sprite('PLAYER-EXPLOSION-1'))
+    player.can_move = True
+    player.set_image(sheet.get_sprite('PLAYER'))'''
+    player.set_position((WIDTH/2-player.width/2, player.get_y()))
 
 def update(dt):
     global base_surface
