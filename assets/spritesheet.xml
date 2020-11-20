@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Space Invaders spritesheet (*.png file) -->
+<!-- unit : pixels -->
+
+<spritesheet filename="spritesheet.png">
+
+    <!-- Player Sprite -->
+    <sprite id="PLAYER" x="1" y="49" w="16" h="8"/>
+    <sprite id="PLAYER-EXPLOSION-0" x="19" y="49" w="16" h="8"/>
+    <sprite id="PLAYER-EXPLOSION-1" x="37" y="49" w="16" h="8"/>
+
+    <!-- Invaders Sprites-->
+    <sprite id="ALIEN-A-0" x="1" y="1" w="16" h="8"/>
+    <sprite id="ALIEN-A-1" x="1" y="11" w="16" h="8"/>
+    <sprite id="ALIEN-B-0" x="19" y="1" w="16" h="8"/>
+    <sprite id="ALIEN-B-1" x="19" y="11" w="16" h="8"/>
+    <sprite id="ALIEN-C-0" x="37" y="1" w="16" h="8"/>
+    <sprite id="ALIEN-C-1" x="37" y="11" w="16" h="8"/>
+    <sprite id="MYSTERY-ALIEN" x="1" y="39" w="16" h="8"/>
+    <sprite id="EXPLOSION" x="55" y="1" w="16" h="8"/>
+
+    <!-- Projectiles -->
+    <sprite id="PROJECTILE-A-0" x="1" y="21" w="3" h="8"/>
+    <sprite id="PROJECTILE-A-1" x="6" y="21" w="3" h="8"/>
+    <sprite id="PROJECTILE-A-2" x="11" y="21" w="3" h="8"/>
+    <sprite id="PROJECTILE-A-3" x="16" y="21" w="3" h="8"/>
+    <sprite id="PROJECTILE-B-0" x="21" y="21" w="3" h="8"/>
+    <sprite id="PROJECTILE-B-1" x="26" y="21" w="3" h="8"/>
+    <sprite id="PROJECTILE-B-2" x="31" y="21" w="3" h="8"/>
+    <sprite id="PROJECTILE-B-3" x="36" y="21" w="3" h="8"/>
+    <sprite id="PROJECTILE-C-0" x="41" y="21" w="3" h="8"/>
+    <sprite id="PROJECTILE-C-1" x="46" y="21" w="3" h="8"/>
+    <sprite id="PROJECTILE-C-2" x="51" y="21" w="3" h="8"/>
+    <sprite id="PROJECTILE-C-3" x="56" y="21" w="3" h="8"/>
+    <sprite id="PLAYER-PROJECTILE" x="55" y="49" w="1" h="8"/>
+
+    <sprite id="LARGE-IMPACT" x="58" y="49" w="8" h="8"/>
+    <sprite id="IMPACT" x="61" y="21" w="6" h="8"/>
+    <sprite id="SHELTER" x="45" y="31" w="24" h="16"/>
+
+    <!-- Font Sprites -->
+    <!-- 8x6 grid with 2px padding -->
+    <!-- First row -->
+    <sprite id="A" x="1" y="69" w="8" h="8"/>
+    <sprite id="B" x="11" y="69" w="8" h="8"/>
+    <sprite id="C" x="21" y="69" w="8" h="8"/>
+    <sprite id="D" x="31" y="69" w="8" h="8"/>
+    <sprite id="E" x="41" y="69" w="8" h="8"/>
+    <sprite id="F" x="51" y="69" w="8" h="8"/>
+    <sprite id="G" x="61" y="69" w="8" h="8"/>
+    <sprite id="H" x="71" y="69" w="8" h="8"/>
+    <!-- Second row -->
+    <sprite id="I" x="1"  y="79" w="8" h="8"/>
+    <sprite id="J" x="11" y="79" w="8" h="8"/>
+    <sprite id="K" x="21" y="79" w="8" h="8"/>
+    <sprite id="L" x="31" y="79" w="8" h="8"/>
+    <sprite id="M" x="41" y="79" w="8" h="8"/>
+    <sprite id="N" x="51" y="79" w="8" h="8"/>
+    <sprite id="O" x="61" y="79" w="8" h="8"/>
+    <sprite id="P" x="71" y="79" w="8" h="8"/>
+    <!-- Third row -->
+    <sprite id="Q" x="1"  y="89" w="8" h="8"/>
+    <sprite id="R" x="11" y="89" w="8" h="8"/>
+    <sprite id="S" x="21" y="89" w="8" h="8"/>
+    <sprite id="T" x="31" y="89" w="8" h="8"/>
+    <sprite id="U" x="41" y="89" w="8" h="8"/>
+    <sprite id="V" x="51" y="89" w="8" h="8"/>
+    <sprite id="W" x="61" y="89" w="8" h="8"/>
+    <sprite id="X" x="71" y="89" w="8" h="8"/>
+    <!-- Fourth row -->
+    <sprite id="Y" x="1"  y="99" w="8" h="8"/>
+    <sprite id="Z" x="11" y="99" w="8" h="8"/>
+    <sprite id="0" x="21" y="99" w="8" h="8"/>
+    <sprite id="1" x="31" y="99" w="8" h="8"/>
+    <sprite id="2" x="41" y="99" w="8" h="8"/>
+    <sprite id="3" x="51" y="99" w="8" h="8"/>
+    <sprite id="4" x="61" y="99" w="8" h="8"/>
+    <sprite id="5" x="71" y="99" w="8" h="8"/>
+    <!-- Fifth row -->
+    <sprite id="6" x="1"  y="109" w="8" h="8"/>
+    <sprite id="7" x="11" y="109" w="8" h="8"/>
+    <sprite id="8" x="21" y="109" w="8" h="8"/>
+    <sprite id="9" x="31" y="109" w="8" h="8"/>
+    <sprite id="LT" x="41" y="109" w="8" h="8"/>
+    <sprite id="GT" x="51" y="109" w="8" h="8"/>
+    <sprite id="=" x="61" y="109" w="8" h="8"/>
+    <sprite id="*" x="71" y="109" w="8" h="8"/>
+    <!-- Last row -->
+    <sprite id="?" x="1" y="119" w="8" h="8"/>
+    <sprite id="-" x="11" y="119" w="8" h="8"/>
+</spritesheet>
